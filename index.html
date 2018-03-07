@@ -5,74 +5,100 @@
     <link rel='stylesheet' href='./home.css'>
     <title>Sean Obringer Portfolio </title>
   </head>
-  <body>
-    <div class='banner'>
-      <h1>Sean Obringer</h1>
+  <body id='home'>
+    <header >
+      <a href='#home'><h3>Sean</h3></a>
+      <nav>
+        <ul>
+          <a href='#about'><li>About</li></a>
+          <a href='#schoolProjects'><li>School Projects</li></a>
+          <a href='#clients'><li>Clients</li></a>
+          <a href='#contact'><li>Contact</li></a>
+        </ul>
+      </nav>
+
+    </header>
+    <div class='pitch'>
+      <h1>Hello,
+        <br> my name is Sean.
+        <br><br>I am a Full Stack Web Developer living in Seattle, WA. </h1>
     </div>
-    <div class='headShotContainer'>
+    <div id='about' class='headShotContainer'>
       <img src='./assets/pics/HeadShot.jpg'/>
     </div>
-    <p class='bio'>
-      I like to build things. Specifically, I enjoy the process of starting with an idea and transforming it into reality. I am a web developer, educator, and musician.
-    </p>
+    <div  class='bio'>
+      <h3 >About:</h3>
+      <p>
+        In the summer of 2017, I decided to make a career change. I was working as a music teacher since graduating college 5 years prior and decided to attend Galvanize's 6 month Web Development Immersive to level up my skills.
+        I like to build things. Specifically, I enjoy the process of starting with an idea and transforming it into reality. I am a web developer, educator, and musician.
+      </p>
+      <p>
+        Currently, I am seeking full time employment as a web developer.
+      </p>
+    </div>
+
     <hr>
     <div class='projectsContainer'>
       <hr>
-      <h2>School Projects</h2>
-      <div class='project'>
-        <h3>myTravels</h3>
+      <h2 id='schoolProjects'>School Projects</h2>
+      <div class='school'>
+        <div class='project myTravels'>
+          <iframe width="854" height="480" src="https://www.youtube.com/embed/dX2STSA0ZW8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/dX2STSA0ZW8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <div class='info'>
-          <p class='about'>
-            myTravels is my capstone project for Galvanize's Wed Development Immersive. The idea behind myTravels is to give users a travel oriented social platform to share photos, comments, and travel notes while connecting them to fellow travelers.</p>
-          <p class='about'>
-            This project was built with HTML5, CSS3, ES6, ReactJS, React Router, NodeJS, ExpressJS, KnexJS, Cloundinary, and PostgreSQL. I followed the MVC design pattern to separate concerns.</p>
+          <div class='info'>
+            <h3>myTravels</h3>
+            <p class='about'>
+              myTravels is my capstone project for Galvanize's Wed Development Immersive. The idea behind myTravels is to give users a travel oriented social platform to share photos, comments, and travel notes while connecting them to fellow travelers.</p>
+            <p class='about'>
+              This project was built with HTML5, CSS3, ES6, ReactJS, React Router, NodeJS, ExpressJS, KnexJS, Cloundinary, and PostgreSQL. I followed the MVC design pattern to separate concerns.</p>
 
-          <div class='linksContainer'>
-            <p>myTravels: <a href='http://mytravels.surge.sh/'> live site</a></p>
+            <div class='linksContainer'>
+              <p>myTravels: <a href='http://mytravels.surge.sh/'> live site</a></p>
 
-            <p>GitHub repo: <a href='https://github.com/GuitarOTronic/myTravels-CapstoneFrontend'>Front End Repository</a></p>
-            <p>GitHub repo: <a href='https://github.com/GuitarOTronic/myTravels-CapstoneBackend'>Back End Repository</a></p>
+              <p>GitHub repo: <a href='https://github.com/GuitarOTronic/myTravels-CapstoneFrontend'>Front End Repository</a></p>
+              <p>GitHub repo: <a href='https://github.com/GuitarOTronic/myTravels-CapstoneBackend'>Back End Repository</a></p>
+            </div>
+          </div>
+        </div>
+        <div class='project gardenWalk'>
+          <iframe width="854" height="480" src="https://www.youtube.com/embed/I3DqtS4yiBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class='info'>
+            <h3>Garden Walk</h3>
+            <p class='about'>
+              Garden Walk is a mobile React app that motivates people to walk more by rewarding users with an adorable garden they could grow with their steps.</p>
+            <p class='about'>
+              This was a group project where I was partially responsible for building the API, RESTful routes, several React components, and planning/wireframing. Garden walk was built with HTML5, CSS3, JavaScript, ReactJS, React Router, NodeJS, ExpressJS, KnexJS, and PostgreSQL while following the MVC pattern.</p>
+            <div class='linksContainer'>
+              <p>Garden Walk: <a href='https://garden-walk.surge.sh/'>live site</a></p>
+
+              <p>GitHub repo: <a href='https://github.com/GuitarOTronic/plant-walking-frontend '>Repository</a></p>
+            </div>
+          </div>
+        </div>
+        <div class='project ChordGenie'>
+          <a href='http://chordgenie.surge.sh/'><img src='./assets/pics/ChordGenie.png'/></a>
+          <div>
+            <hr>
+          </div>
+          <div class='info'>
+            <h3>Chord Genie</h3>
+            <p class='about'>
+              Chord Genie is a JavaScript program for the beginner guitarist who wants to learn to play and hear chords. </p>
+            <p class='about'>
+              This was my first project at Galvanize. Chord Genie is built with JavaScript, HTML, and CSS.</p>
+            <div class='linksContainer'>
+              <p>Chord Genie: <a href='http://chordgenie.surge.sh/'> live site</a></p>
+              <p>GitHub repo: <a href='https://github.com/GuitarOTronic/Chord-Genie'>Repository</a></p>
+            </div>
           </div>
         </div>
       </div>
-      <div class='project'>
-        <h3>Garden Walk</h3>
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/I3DqtS4yiBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <div class='info'>
-          <p class='about'>
-            Garden Walk is a mobile React app that motivates people to walk more by rewarding users with an adorable garden they could grow with their steps.</p>
-          <p class='about'>
-            This was a group project where I was partially responsible for building the API, RESTful routes, several React components, and planning/wireframing. Garden walk was built with HTML5, CSS3, JavaScript, ReactJS, React Router, NodeJS, ExpressJS, KnexJS, and PostgreSQL while following the MVC pattern.</p>
-          <div class='linksContainer'>
-            <p>Garden Walk: <a href='https://garden-walk.surge.sh/'>live site</a></p>
+      <h2 id='clients'>Freelancing Projects</h2>
 
-            <p>GitHub repo: <a href='https://github.com/GuitarOTronic/plant-walking-frontend '>Repository</a></p>
-          </div>
-        </div>
-      </div>
-      <div class='project'>
-        <h3>Chord Genie</h3>
-        <a href='http://chordgenie.surge.sh/'><img src='./assets/pics/ChordGenie.png'/></a>
-        <div class='info'>
-          <p class='about'>
-            Chord Genie is a JavaScript program for the beginner guitarist who wants to learn to play and hear chords. </p>
-          <p class='about'>
-            This was my first project at Galvanize. Chord Genie is built with JavaScript, HTML, and CSS.</p>
-          <div class='linksContainer'>
-            <p>Chord Genie: <a href='http://chordgenie.surge.sh/'> live site</a></p>
-            <p>GitHub repo: <a href='https://github.com/GuitarOTronic/Chord-Genie'>Repository</a></p>
-          </div>
-        </div>
-      </div>
-      <h2>Freelancing Projects</h2>
-
-      <div class='project'>
-        <h3>Witkamp Guitar Lessons</h3>
-
+      <div class='project paulsSite'>
         <a href='http://WitkampDemoSite.surge.sh/'><img src='./assets/pics/paulsSite.png'/></a>
         <div class='info'>
+          <h3>Witkamp Guitar Lessons</h3>
           <p class='about'>
             Paul needed a website to help market his teaching business, collect new student information, and attract more students. </p>
           <p class='about'>
@@ -84,13 +110,8 @@
         </div>
       </div>
     </div>
-<!--
-
-
-    Hangry Snacks - review website where users can add reviews and star ratings for a list of snacks. This was a group project where I was responsible for the main view, rating system, and review entry functionalities.
-    https://github.com/GuitarOTronic/snack-attack-frontend
-
-    Garden Walk - mobile React app that motivates people to walk more by rewarding users with an adorable garden they could grow with their steps.
-    https://github.com/GuitarOTronic/plant-walking-frontend -->
+    <footer>
+      feet
+    </footer>
   </body>
 </html>

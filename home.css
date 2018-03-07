@@ -1,10 +1,12 @@
 body{
-  background-image: url('./assets/pics/BGpattern.padding')
+  background-image: url('./assets/pics/BGpattern.png');
+  margin:0;
 }
 .info{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 2rem;
 }
 .about{
   padding-top: 1rem;
@@ -14,18 +16,97 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
+.pitch{
+  background:
+    linear-gradient(
+      rgba(1, 1, 1, 0.3),
+      rgba(1, 1, 1, 0.5)
+      ),
+    url('./assets/pics/BGSeattle.jpg');
+  background-size: cover;
+  min-height:100vh;
+  background-repeat: no-repeat;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pitch h1{
+  margin: 0 auto;
+  max-width: 40vw;
+  min-width: 400px;
+  color:#fff;
+  text-align: center;
+}
 .project{
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 1rem;
+  padding: 1rem;
 }
 
-.headShotContainer img{
-  width:30vw;
-  min-width: 300px;
+.ChordGenie{
+  background-color:#77513c61;
+}
 
+.gardenWalk{
+  background-color: #ab2f4a45;
+}
+
+.myTravels{
+  background-color:#75a8665c;
+}
+.paulsSite{
+  background-color: #eb5f435c;
+}
+
+
+header{
+  height:3rem;
+  margin-bottom: 3rem;
+  background-color: #121b1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0;
+  width: 100vw;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+nav li{
+  padding: 0 1rem;
+  color:#fff;
+}
+header a{
+  text-decoration: none;
+}
+header h3{
+  margin:0;
+  color:#fff;
+  padding-left:1rem;
+  font-size: 1.4rem;
+
+}
+
+
+footer{
+  background:pink;
+
+  padding-top: 3rem;
+  height:6rem;
+}
+.headShotContainer img{
+  width:250px;
+  min-width: 300px;
+  border-radius: 50%;
 }
 .linksContainer{
   padding-top: 1rem;
@@ -35,7 +116,7 @@ body{
 }
 .project img,
 .project iframe{
-  max-width: 60vw;
+  max-width: 30vw;
   min-width: 340px;
   /* height:100%; */
 }
@@ -43,6 +124,7 @@ body{
 .project iframe{
   padding-bottom: 1rem;
 }
+
 .project a{
   /* padding:1rem 0 1rem 1rem; */
   margin:0;
@@ -54,8 +136,15 @@ h2{
 h3{
   text-align: center;
   font-size: 2rem;
+  margin-top: 0;
 }
 p{
   margin:0;
   max-width: 500px;
+}
+.school{
+  /* display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center; */
+
 }
