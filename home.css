@@ -28,6 +28,10 @@ body{
   text-align: center;
 }
 
+.ChordGenie{
+  background-color:#77513c61;
+}
+
 #dropMenu{
   /* background-color: grey; */
   position: fixed;
@@ -57,16 +61,20 @@ body{
   margin-top: 0;
 }
 
+footer{
+  background:rgba(88,88,88,0.9);
+  margin-top: 3rem;
+  text-align: center;
+  align-content: center;
+  color:#fff;
+  height:48px;
+}
+
 .info{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 2rem;
-}
-
-
-.ChordGenie{
-  background-color:#77513c61;
 }
 
 .gardenWalk{
@@ -134,17 +142,11 @@ h3{
   margin-top: 0;
 }
 
-footer{
-  background:rgba(88,88,88,0.9);
-  margin-top: 3rem;
-  text-align: center;
-  align-content: center;
-  color:#fff;
-  height:48px;
-}
+
 .headShotContainer{
   display: flex;
   padding: 1rem;
+  padding-top: 4rem;
   /* justify-content: center; */
 }
 .headShotContainer img{
@@ -168,6 +170,7 @@ footer{
   padding-bottom: 1rem;
 }
 .projectsContainer{
+  padding-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
