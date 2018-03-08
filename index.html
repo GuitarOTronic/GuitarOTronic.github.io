@@ -11,9 +11,9 @@
     <header >
       <a href='#home'><h3>Sean</h3></a>
       <nav>
-        <img class='hamburger' onClick=showHamburger() src='./assets/pics/bars.png'/>
+        <img id='hamburger' class='hamburger showMe' onClick=toggleHamburger() src='./assets/pics/bars.png'/>
         <ul id='menu'>
-          <a href='#about'><li>About</li></a>
+          <a href='#about' ><li>About</li></a>
           <a href='#schoolProjects'><li>School Projects</li></a>
           <a href='#clients'><li>Clients</li></a>
           <a href='#contact'><li>Contact</li></a>
@@ -21,7 +21,12 @@
       </nav>
 
     </header>
-
+    <ul id='dropMenu'>
+      <a href='#about'><li>About</li></a>
+      <a href='#schoolProjects'><li>School Projects</li></a>
+      <a href='#clients'><li>Clients</li></a>
+      <a href='#contact'><li>Contact</li></a>
+    </ul>
     <div class='pitch'>
       <h1>Hello,
         <br> my name is Sean.

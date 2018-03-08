@@ -1,11 +1,13 @@
 
-function showHamburger(){
-  let menu = document.getElementById('menu')
-  let classes = menu.classList.value
-  
+function toggleHamburger(){
+  let dropMenu = document.getElementById('dropMenu')
+  let hamburger = document.getElementById('hamburger')
+  let classes = dropMenu.classList.value
+
   if(classes.includes('showMe')){
-    menu.classList.remove('showMe')
-  }else{
-    menu.classList.add('showMe')
+    dropMenu.classList.remove('showMe')
+    console.log('dropMenu', dropMenu.classList, 'cancel', cancel.classList);
+  } else {
+    dropMenu.classList.add('showMe')
   }
 }
