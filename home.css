@@ -286,7 +286,7 @@ button:hover{
   padding-bottom: 1rem;
 }
 iframe{
-  margin-top: 1rem;
+  margin: 1rem;
   /* width:854;
    height:480; */
 }
@@ -324,7 +324,7 @@ iframe{
   flex-direction: row;
   margin: 1rem;
   margin-bottom: 2rem;
-  /* padding: 1rem; */
+
   -webkit-box-shadow: 10px 10px 21px 0px rgba(211,211,211,1);
   -moz-box-shadow: 10px 10px 21px 0px rgba(211,211,211,1);
   box-shadow: 10px 10px 21px 0px rgba(211,211,211,1);
@@ -416,6 +416,7 @@ p{
     max-width: 300px;
   }
   .project{
+    padding:1rem;
     flex-direction: row;
     max-width: 800px;
   }
