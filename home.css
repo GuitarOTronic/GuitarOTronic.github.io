@@ -93,7 +93,7 @@ footer small{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 2rem;
+
 }
 
 .gardenWalk{
@@ -176,10 +176,7 @@ h3{
     flex-direction: column;
     align-items: flex-start;
 }
-.project img,
-.project iframe{
-  max-width: 80vw;
-}
+
 .project img,
 .project iframe{
   padding-bottom: 1rem;
@@ -258,8 +255,12 @@ p{
     ul{
       display: none;
     }
+    .project img,
+    .project iframe{
+      max-width: 80vw;
+    }
 }
-@media (min-width:750px){
+@media (min-width:769px){
   .hamburger{
     display: none;
   }
@@ -274,12 +275,19 @@ p{
    padding-left:1rem;
    font-size: 1.4rem;
   }
+  .info{
+    margin-left: 2rem;
+  }
   .pitch h1{
     font-size: 2rem;
     max-width: 50vw;
   }
+  .project img{
+    max-width: 300px;
+  }
   .project{
     flex-direction: row;
+    max-width: 800px;
   }
   #menu{
     display: flex;
