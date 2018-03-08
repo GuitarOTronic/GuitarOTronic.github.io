@@ -352,6 +352,9 @@ p{
     }
     .project{
       flex-direction: column;
+      margin: 0;
+      /* padding: 0; */
+      margin-bottom: 2rem;
     }
     .info h3{
       margin-top: 1.5rem;
