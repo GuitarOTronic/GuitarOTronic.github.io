@@ -23,17 +23,18 @@
   }
 }
 .bio p{
+  padding:1rem;
   text-align: center;
-  animation: fadein 3s;
-      -moz-animation: fadein 2s;
-      -webkit-animation: fadein 2s;
-      -o-animation: fadein 2s;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
 }
 
 body{
   margin-top: 50px;
   background-image: url('./assets/pics/BGpattern.png');
   margin:0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 .cancel{
   display: none;
@@ -47,7 +48,13 @@ body{
 .ChordGenie{
   background-color:#77513c61;
 }
-
+.chordGeniePic{
+  background-image: url('./assets/pics/ChordGenie.png');
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
 .contactContainer{
   padding-top: 2rem;
   display: flex;
@@ -72,10 +79,8 @@ body{
   padding-left: 0;
   background:rgba(88,88,88,0.9);
   text-align:right;
-  /* padding-top: 2.5rem; */
   padding-right: 1rem;
   margin-bottom: 0;
-  /* width: 100vw; */
 }
 #dropMenu a{
   text-decoration: none;
@@ -90,6 +95,11 @@ body{
 #dropMenu ul{
   padding: 0;
   margin-top: 0;
+}
+
+.flex{
+  display: flex;
+  height: 100%;
 }
 
 footer{
@@ -108,7 +118,7 @@ footer small{
 .info{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 
 }
 
@@ -121,6 +131,13 @@ footer small{
 }
 .paulsSite{
   background-color: #eb5f435c;
+}
+.paulsSitePic{
+  width: 300px;
+  height: 300px;
+  background-image:url('./assets/pics/paulsSite.png');
+  background-size: cover;
+  background-position: center;
 }
 
 header{
@@ -189,9 +206,67 @@ h3{
 .linksContainer{
   padding-top: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    /* flex-direction: column; */
+    align-items: flex-end;
+    justify-content: flex-end;
 }
+.linksContainer .icons{
+  padding: 0 1rem;
+}
+
+.paulsSite button{
+  background-color: tomato;
+  color:#fff;
+  padding:1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  border:none;
+}
+.paulsSite button:hover{
+  background-color: red;
+}
+.myTravels button{
+  background-color: #173536;
+  color:#fff;
+  padding:1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  border:none;
+}
+.myTravels button:hover{
+  background-color: #73a765;
+}
+
+.gardenWalk button{
+  background-color: #ae304b;
+  color:#fff;
+  padding:1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  border:none;
+}
+.gardenWalk button:hover{
+  background-color: #d24f6b;
+}
+.ChordGenie button{
+  background-color: #7b7d7b;
+  color:#fff;
+  padding:1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  border:none;
+}
+.ChordGenie button:hover{
+  background-color: #abb3ab;
+}
+
+
+
+
+button:hover{
+  cursor: pointer;
+}
+
 .icons{
   height: 44px;
   width: 44px;
@@ -239,9 +314,9 @@ iframe{
   margin: 1rem;
   margin-bottom: 2rem;
   padding: 1rem;
-  -webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 21px 0px rgba(211,211,211,1);
+  -moz-box-shadow: 10px 10px 21px 0px rgba(211,211,211,1);
+  box-shadow: 10px 10px 21px 0px rgba(211,211,211,1);
 }
 .project a{
   /* padding:1rem 0 1rem 1rem; */
@@ -262,6 +337,9 @@ p{
   flex-direction: column;
 }
 @media (min-width:320px) {
+  .flex{
+    justify-content: space-around;
+  }
     header{
       font-size: 1rem;
     }
@@ -274,6 +352,12 @@ p{
     }
     .project{
       flex-direction: column;
+    }
+    .info h3{
+      margin-top: 1.5rem;
+    }
+    .projectsContainer h2{
+      text-align: center;
     }
     ul{
       display: none;
@@ -289,6 +373,9 @@ p{
   }
   #cancel{
     display: none
+  }
+  .flex{
+    justify-content: space-around;
   }
   header{
     min-height:3rem;
@@ -311,6 +398,9 @@ p{
   .project{
     flex-direction: row;
     max-width: 800px;
+  }
+  .project h3{
+    margin: 0;
   }
   #menu{
     display: flex;
