@@ -74,7 +74,7 @@ body{
 }
 .contactLinks{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 #dropMenu{
