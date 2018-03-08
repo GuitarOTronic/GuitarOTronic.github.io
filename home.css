@@ -11,10 +11,25 @@
 .bio{
   margin: 0 auto;
   max-width:500px;
+
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1
+  }
 }
 .bio p{
   text-align: center;
+  animation: fadein 3s;
+      -moz-animation: fadein 2s;
+      -webkit-animation: fadein 2s;
+      -o-animation: fadein 2s;
 }
+
 body{
   margin-top: 50px;
   background-image: url('./assets/pics/BGpattern.png');
@@ -34,7 +49,6 @@ body{
 }
 
 #dropMenu{
-  /* background-color: grey; */
   position: fixed;
   top:3rem;
   margin-top: 0;
@@ -199,8 +213,6 @@ h3{
 }
 .pitch h1{
   margin: 0 auto;
-  max-width: 40vw;
-  /* min-width: 400px; */
   color:#fff;
   text-align: center;
 }
@@ -231,7 +243,6 @@ p{
 }
 @media (min-width:320px) {
     header{
-      /* min-height: 148px; */
       font-size: 1rem;
     }
     header h3{
@@ -239,7 +250,7 @@ p{
       font-size: 2.5rem;
     }
     .pitch h1{
-      max-width: 50vw;
+      max-width: 70vw;
     }
     .project{
       flex-direction: column;
