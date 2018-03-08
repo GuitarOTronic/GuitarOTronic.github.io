@@ -48,6 +48,22 @@ body{
   background-color:#77513c61;
 }
 
+.contactContainer{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contactContainer p{
+  text-align: center;
+  padding:1rem;
+}
+.contactLinks{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 #dropMenu{
   position: fixed;
   top:3rem;
@@ -176,7 +192,10 @@ h3{
     flex-direction: column;
     align-items: flex-start;
 }
-
+.icons{
+  height: 44px;
+  width: 44px;
+}
 .project img,
 .project iframe{
   padding-bottom: 1rem;
@@ -218,7 +237,11 @@ iframe{
   justify-content: center;
   flex-direction: row;
   margin: 1rem;
+  margin-bottom: 2rem;
   padding: 1rem;
+  -webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
 }
 .project a{
   /* padding:1rem 0 1rem 1rem; */

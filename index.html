@@ -14,8 +14,8 @@
         <img id='hamburger' class='hamburger showMe' onClick=toggleHamburger() src='./assets/pics/bars.png'/>
         <ul id='menu'>
           <a href='#about' ><li>About</li></a>
-          <a href='#schoolProjects'><li>School Projects</li></a>
           <a href='#clients'><li>Clients</li></a>
+          <a href='#schoolProjects'><li>School Projects</li></a>
           <a href='#contact'><li>Contact</li></a>
         </ul>
       </nav>
@@ -23,8 +23,8 @@
     </header>
     <ul id='dropMenu'>
       <a href='#about' onClick=toggleHamburger()><li>About</li></a>
-      <a href='#schoolProjects' onClick=toggleHamburger()><li>School Projects</li></a>
       <a href='#clients' onClick=toggleHamburger()><li>Clients</li></a>
+      <a href='#schoolProjects' onClick=toggleHamburger()><li>School Projects</li></a>
       <a href='#contact' onClick=toggleHamburger()><li>Contact</li></a>
     </ul>
     <div class='pitch'>
@@ -47,8 +47,24 @@
         </p>
       </div>
     </div>
+    <div class='projectsContainer'>
+      <h2 id='clients'>Freelancing Projects</h2>
 
-
+      <div class='project paulsSite'>
+        <a href='http://WitkampDemoSite.surge.sh/'><img src='./assets/pics/paulsSite.png'/></a>
+        <div class='info'>
+          <h3>Witkamp Guitar Lessons</h3>
+          <p class='about'>
+            Paul needed a website to help market his teaching business, collect new student information, and attract more students. </p>
+          <p class='about'>
+            This is a single page React app connected to a Heroku server built with ReactJS, React Router, HTML5, CSS3, Flexbox, ES6, NodeJS, ExpressJS, and KnexJS. </p>
+          <div class='linksContainer'>
+            <p>Witkamp Guitar Lessons: <a   href='http://WitkampDemoSite.surge.sh/'> live site</a></p>
+            <p>GitHub repo: <a href='https://github.com/GuitarOTronic/paulsSite'>Repository</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id='schoolProjects' class='projectsContainer'>
       <h2 >School Projects</h2>
       <div class='school'>
@@ -101,21 +117,16 @@
           </div>
         </div>
       </div>
-      <h2 id='clients'>Freelancing Projects</h2>
-
-      <div class='project paulsSite'>
-        <a href='http://WitkampDemoSite.surge.sh/'><img src='./assets/pics/paulsSite.png'/></a>
-        <div class='info'>
-          <h3>Witkamp Guitar Lessons</h3>
-          <p class='about'>
-            Paul needed a website to help market his teaching business, collect new student information, and attract more students. </p>
-          <p class='about'>
-            This is a single page React app connected to a Heroku server built with ReactJS, React Router, HTML5, CSS3, Flexbox, ES6, NodeJS, ExpressJS, and KnexJS. </p>
-          <div class='linksContainer'>
-            <p>Witkamp Guitar Lessons: <a   href='http://WitkampDemoSite.surge.sh/'> live site</a></p>
-            <p>GitHub repo: <a href='https://github.com/GuitarOTronic/paulsSite'>Repository</a></p>
-          </div>
-        </div>
+    </div>
+    <div id='contact' class='contactContainer'>
+      <h3> Let's Connect </h3>
+      <p> Please feel free to contact me if you'd like to work together or just grab a coffee.</p>
+      <div class='contactLinksContainer'>
+        <div class='contactLinks'>
+        <a href ='https://www.linkedin.com/in/sean-obringer/'><img class='icons' src='./assets/pics/linkedIn.png'/></a>
+        <a href='https://www.github.com/GuitarOTronic'><img class='icons' src='./assets/pics/githubLogo.png'/></a>
+      </div>
+        <h4>SeanObringer90@gmail.com</h4>
       </div>
     </div>
     <footer>
