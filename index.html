@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <script src='scripts.js'></script>
     <link rel='stylesheet' href='./home.css'>
     <title>Sean Obringer Portfolio </title>
   </head>
@@ -9,7 +11,8 @@
     <header >
       <a href='#home'><h3>Sean</h3></a>
       <nav>
-        <ul>
+        <img class='hamburger' onClick=showHamburger() src='./assets/pics/bars.png'/>
+        <ul id='menu'>
           <a href='#about'><li>About</li></a>
           <a href='#schoolProjects'><li>School Projects</li></a>
           <a href='#clients'><li>Clients</li></a>
@@ -18,6 +21,7 @@
       </nav>
 
     </header>
+
     <div class='pitch'>
       <h1>Hello,
         <br> my name is Sean.
@@ -26,18 +30,20 @@
     <div id='about' class='headShotContainer'>
       <img src='./assets/pics/HeadShot.jpg'/>
     </div>
-    <div  class='bio'>
-      <h3 >About:</h3>
-      <p>
-        In the summer of 2017, I decided to make a career change. I was working as a music teacher since graduating college 5 years prior and decided to attend Galvanize's 6 month Web Development Immersive to level up my skills.
-        I like to build things. Specifically, I enjoy the process of starting with an idea and transforming it into reality. I am a web developer, educator, and musician.
-      </p>
-      <p>
-        Currently, I am seeking full time employment as a web developer.
-      </p>
+    <div  class='bioContainer'>
+      <div class='bio'>
+        <h3 >About Sean</h3>
+        <p>
+          In the summer of 2017, I decided to make a career change. I was working as a music teacher since graduating college 5 years prior and decided to attend Galvanize's 6 month Web Development Immersive to level up my skills.
+          I like to build things. Specifically, I enjoy the process of starting with an idea and transforming it into reality. I am a web developer, educator, and musician.
+        </p>
+        <p>
+          Currently, I am seeking full time employment as a web developer.
+        </p>
+      </div>
     </div>
 
-    <hr>
+
     <div class='projectsContainer'>
       <hr>
       <h2 id='schoolProjects'>School Projects</h2>
