@@ -281,6 +281,9 @@ button:hover{
   height: 44px;
   width: 44px;
 }
+
+
+
 .project img,
 .project iframe{
   padding-bottom: 1rem;
@@ -407,6 +410,9 @@ p{
   }
   .linksContainer{
     padding-bottom: 1rem;
+  }
+  .margUp{
+    margin-top: 2.2rem;
   }
   .pitch h1{
     font-size: 2rem;
