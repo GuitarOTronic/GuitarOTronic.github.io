@@ -6,7 +6,6 @@ function toggleHamburger(){
 
   if(classes.includes('showMe')){
     dropMenu.classList.remove('showMe')
-    console.log('dropMenu', dropMenu.classList, 'cancel', cancel.classList);
   } else {
     dropMenu.classList.add('showMe')
   }

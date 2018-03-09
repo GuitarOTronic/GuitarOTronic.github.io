@@ -365,6 +365,7 @@ p{
       padding-bottom: 3rem;
     }
     .pitch h1{
+      font-size: 1.5rem;
       max-width: 70vw;
     }
     .project{
